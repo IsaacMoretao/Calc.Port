@@ -1,0 +1,112 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  text-align: center;
+  background-color: rgb(5, 5, 5);
+  color: aliceblue;
+}
+
+header {
+  font-family: cursive;
+  margin-top: 10%;
+}
+
+main {
+  background-color: rgba(255, 255, 255, 0.315);
+  margin-left: 30%;
+  margin-right: 30%;
+  border: 1px solid white;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+footer{
+  margin-top: 10px;
+}
+
+#operações {
+  margin-left: 15px;
+}
+
+#Result {
+  height: 4vh;
+  width: 50.55vh;
+  min-width: 30vh;
+  margin-top: 20px;
+  margin-left: 25px;
+  font-size: 30px;
+  background-color: rgba(240, 248, 255, 0.609);
+  border-radius: 10px;
+  border: 2px solid rgb(27, 2, 85);
+  color: black;
+}
+
+.Botão {
+  height: 4vw;
+  width: 8vw;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 25px;
+  background-color: rgba(240, 248, 255, 0.609);
+  transition: 0.5s;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.Botão:hover{
+  background-color: rgb(255, 255, 255);
+  
+}
+#Operações{
+ background-color: rgba(27, 2, 85, 0.335);
+ height: 4vw;
+ width: 8vw;
+ margin-top: 10px;
+ margin-left: 10px;
+ font-size: 25px;
+ transition: 0.5s;
+ border: 1px solid white;
+ border-radius: 5px;
+ color: rgb(255, 255, 255);
+ cursor: pointer;
+}
+#Operações:hover{
+  background-color: rgba(27, 2, 85, 0.6);
+}
+
+#igual {
+  margin-left: 15px;
+  height: 13.55vw;
+  position: absolute;
+  margin-top: -30px;
+  width: 7.9vw;
+  font-size: 30px;
+  background-color: rgba(3, 29, 117, 0.377);
+  transition: 0.5s;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+#igual:hover{
+  background-color: rgba(3, 30, 117, 0.7);
+}
+
+
+div {
+  display: flex;
+  align-items: baseline;
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+img{
+  height: 40px;
+  position: absolute;
+  margin-left: -15px;
+  margin-top: -3px;
+}
+#nada{
+  color: rgba(165, 42, 42, 0);
+}

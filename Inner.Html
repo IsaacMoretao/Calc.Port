@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="IMG/Pi.ico" type="image/x-icon">
+  <title>Cauculadora</title>
+  <link rel="stylesheet" href="Inner.Css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Cauculadora</h1>
+  </header>
+
+  <main>
+    <section>
+      <aside id="Result"></aside>
+    </section>
+    <!------------operações de soma------------>
+    <section id="operações">
+      <button onclick="insert('/')" id="Operações">
+        %
+      </button>
+      <button onclick="insert('+')" id="Operações">
+        +
+      </button>
+      <button onclick="insert('-')" id="Operações">
+        -
+      </button>
+      <button onclick="insert('*')" id="Operações">
+        X
+      </button>
+    </section>
+    <!------------Números------------>
+    <div>
+      <section>
+        <button onclick="insert('1')" class="Botão">
+          1
+        </button>
+        <button onclick="insert('2')" class="Botão">
+          2
+        </button>
+        <button onclick="insert('3')" class="Botão">
+          3
+        </button><br>
+        <button onclick="insert('4')" class="Botão">
+          4
+        </button>
+        <button onclick="insert('5')" class="Botão">
+          5
+        </button>
+        <button onclick="insert('6')" class="Botão">
+          6
+        </button><br>
+        <button onclick="insert('7')" class="Botão">
+          7
+        </button>
+        <button onclick="insert('8')" class="Botão">
+          8
+        </button>
+        <button onclick="insert('9')" class="Botão">
+          9
+        </button><br>
+        <button onclick="clean()" class="Botão">
+         C
+        </button>
+        <button class="Botão">
+          0
+        </button>
+        <button class="Botão" onclick="back()" id="nada" >
+          <img src="IMG/Arrows-Left-Round-icon.png" alt="">
+          .
+        </button>
+
+      </section>
+
+      <section>
+        <button onclick="caucular()" id="igual">
+          =
+        </button>
+
+      </section>
+    </div>
+
+
+  </main>
+
+  <footer>
+    &copy; Isaac Moretão
+  </footer>
+
+  <script>
+    function insert(num) {
+      var numero = document.getElementById('Result').innerHTML;
+      document.getElementById('Result').innerHTML = numero + num;
+    }
+
+    function back(){
+      var resultado = document.getElementById('Result').innerHTML;
+      document.getElementById('Result').innerHTML = resultado.substring(0, resultado.length -1);
+    }
+
+    function clean(){
+      document.getElementById('Result').innerHTML = "";
+    }
+    function caucular() {
+
+      var resultado = document.getElementById('Result').innerHTML;
+      if (resultado) {
+        document.getElementById('Result').innerHTML = eval(resultado);
+      } else {
+        document.getElementById('Result').innerHTML = "Nada..."
+      }
+    }
+  </script>
+
+</body>
+
+</html>
